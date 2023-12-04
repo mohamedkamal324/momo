@@ -1,0 +1,624 @@
+/* START HOME */
+.home{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.463),rgba(0, 0, 0, 0.463)), url(../imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+background-color: #1C1C1C;
+}
+.container{
+    width: 75%;
+}
+.navbar-nav .nav-item{
+    padding: 10px 0;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    padding: 0;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 24px;
+    background-color: white;
+    transition: all .5s;
+}
+.navbar-nav .nav-item .nav-link:hover::after{
+    width: 100%;
+} 
+
+body:not(body:has(:target)) li a[href="#home"],
+body:has(.home:target) li a[href="#home"], 
+body:has(.about:target) li a[href="#about"], 
+body:has(.services:target) li a[href="#services"], 
+body:has(.portfolio:target) li a[href="#portfolio"],
+body:has(.clients:target) li a[href="#clients"],
+body:has(.team:target) li a[href="#team"],
+body:has(.contact:target) li a[href="#contact"]
+{
+    border-bottom: solid 2px white;
+}
+
+
+
+.home-content h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+.home-content p{
+    font-size: 80px;
+    font-weight: 100;
+    color: white;
+}
+.home-icons{
+    width: 210px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.home-icons i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .4);
+}
+.home-content-animation span{
+    font-size: 80px;
+    font-weight: lighter;
+}
+.home-content-animation span::after{
+    content: "I AM|";
+    animation: words 7s infinite ;
+}
+@keyframes words{
+    0%{
+      content: "I AM|";
+    }
+   2%{
+      content: "IAM L|";
+    }
+    4%{
+      content: "I AM La|";
+    }
+    6%{
+      content: "I AM Lar|";
+    }
+    8%{
+      content: "I AM Larr|";
+    }
+    10%{
+      content: "I AM Larry |";
+    }
+    12%{
+      content: "I AM Larry D|";
+    }
+    14%{
+      content: "I AM Larry Da|";
+    }
+   16%{
+      content: "I AM Larry Dan|";
+    }
+    18%{
+      content: "I AM Larry Dani|";
+    }
+    
+    20%{
+      content:"I AM Larry Dania|" ;
+    }
+    22%{
+      content:"I AM Larry Danial|" ;
+    }
+    23%{
+        content:"I AM Larry Danial|" ;
+    }
+
+    24%{
+      content: "I AM Larry Dania|"
+    }
+    26%{
+      content: "I AM Larry Dani|"
+    }
+    28%{
+      content: "I AM Larry Dan|";
+    }
+    30%{
+      content: "I AM Larry Da|";
+    }
+    32%{
+      content: "I AM Larry D|";
+    }
+    34%{
+      content: "I AM Larry |";
+    }
+    36%{
+      content: "I AM Larr|";
+    }
+    38%{
+      content: "I AM Lar|";
+    }
+    40%{
+      content: "I AM La|";
+    }
+    42%{
+      content: "I AM L|";
+    }
+    44%{
+      content: "I AM |";
+    }
+    46%{
+        content: "I AM D|";
+    }
+    48%{
+      content: "I AM De|";
+    }
+    50%{
+      content: "I AM Des|";
+    }
+    52%{
+      content: "I AM Desi|";
+    }
+    54%{
+      content: "I AM Desig|";
+   }
+   56%{
+   content: "I AM Design|";
+   }
+   58%{
+    content:"I AM Designe|";
+   }
+  60%{
+    content: "I AM Designer|";
+  }
+  61%{
+    content: "I AM Designer|";
+  }
+  62%{
+    content: "I AM Designe|";
+  }
+  64%{
+    content: "I AM Design|";
+  }
+  66%{
+    content: "I AM Desig|";
+
+  }
+  68%{
+    content: "I AM Desi|";
+
+  }
+  70%{
+    content: "I AM Des|";
+  }
+  72%{
+    content: "I AM De|";
+  }
+  74%{
+    content: "I AM D|";
+  }
+  76%{
+    content: "I AM |";
+  }
+  78%{
+    content: "I AM D|";
+  }
+  80%{
+    content: "I AM De|";
+  }
+  82%{
+    content: "I AM Dev|";
+  }
+  84%{
+    content: "I AM Devo|";
+  }
+  86%{
+    content: "I AM Devol|";
+  }
+  87%{
+    content: "I AM Develo|";
+  }
+  88%{
+    content: "I AM Develop|";
+  }
+  90%{
+    content: "I AM Develope|";
+  }
+  91%{
+    content: "I AM Developer|";
+  }
+  91.5%{
+    content: "I AM Developer|";
+
+  }
+  92%{
+    content: "I AM Develope|";
+  }
+  93%{
+    content: "I AM Develop|";
+  }
+  94%{
+    content: "I AM Develo|";
+  }
+  95%{
+    content: "I AM Devel|";
+  }
+  96%{
+  content: "I AM Deve|";
+  }
+  97%{
+    content: "I AM Dev|";
+  }
+  98%{
+    content: "I AM De|";
+  }
+  99%{
+    content: "I AM D|";
+  }
+  100%{
+  content: "I AM ";
+  }
+ 
+  }
+/* END HOME */
+/* START ABOUT */
+.about{
+    padding: 100px 0;
+}
+.about-layer{
+    background-image: url(../imgs/dots.png);
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    top: 90px;
+    right: 90px;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+    }
+    .about-layer{
+        top: 35px;
+        right: 70px;
+        display: none;
+    }
+    #hero{
+        width: 100% !important;
+        left: 0;
+    }
+    .about-buttons{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .home-content-animation span{
+        font-size: 40px;
+    }
+}
+.move{
+    left: 80px;
+}
+.bar-title{
+    color: white;
+    top: 28px;
+    left: 5px;
+}
+.progress{
+    padding: 14px 0;
+    box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.percentage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #1C1C1C;
+    transform: translateY(-14px);
+}
+.about-content h2{
+    color: #343434;
+
+}
+.about-content p span{
+    color: black;
+    font-weight: 900;
+}
+.about-buttons a{
+    padding: 9px 15px;
+    margin-right: 5px;
+}
+.about-buttons .bg1{
+    background-color: white;
+    color: black;
+    transition: all .5s;
+}
+.about-buttons .bg1:hover{
+    background-color: black;
+    color: white;
+}
+.about-buttons .bg2{
+    
+    transition: all .5s;
+}
+.about-buttons .bg2:hover{
+    background-color: #1C1C1C;
+    color: white;
+}
+/* END ABOUT */
+
+/* start services */
+.services{
+    background-color: #F7F7F7;
+    padding:100px 0 ;
+}
+.services-card i{
+    font-size: 30px;
+    background-color: #F7F7F7;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 28px 20px;
+    transition: all .5s;
+}
+.services-card:hover i{
+    background-color: #1C1C1C;
+    color: white;
+}
+/* start services */
+
+/* START works */
+.portfolio{
+    padding: 100px 0;
+    
+}
+.title h2{
+    color: #343434;
+    font-size:40px ;
+    font-weight: 900;
+    position: relative;
+    z-index: 4;
+}
+.title h2::after{
+    content: "";
+    width: 190px;
+    height: 25px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+.portfolio-card {
+    overflow: hidden;
+}
+.portfolio-card .portfolio-layer{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    width: 97%;
+    height: 97%;
+    transform: translateY(10px);
+}
+.portfolio-card:hover .portfolio-layer{
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+    transform: translateY(0);
+}
+.portfolio-layer h6{
+    padding-bottom: 30px;
+    transition: all .5s;
+}
+.portfolio-card:hover .portfolio-layer h6{
+    padding-bottom: 0;
+}
+.portfolio-layer div i{
+    width: 35px;
+    height: 35px    ;
+    color: white;
+    border: solid 2px black;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: black;
+    transition: all .2s;
+}
+.portfolio-layer div i:hover{
+    background-color: white;
+    color: black;
+}
+.nav .nav-item .nav-link{
+    color: black;
+    font-weight: 700;
+}
+
+
+.active{
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    position: relative;
+    border-bottom: solid 2px white;
+}
+
+.tab-content .tab-pane{
+    border-bottom: none;
+}
+/* END works */
+/* start clients */
+.clients{
+    background-color: #F7F7F7;
+    padding: 100px 0;
+}
+.carousel-inner .carousel-item{
+    border-bottom: none;
+}
+.carousel-indicators [data-bs-target].active{
+    background-color: #000000 !important;
+    border-radius: 50% !important;
+
+}
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.43);
+    border-radius: 50%;
+}
+.carousel-indicators [data-bs-target]:hover{
+    background-color: #11161511;
+}
+@media screen and (max-width: 600px) {
+    .carousel-item .clients-card img{
+        width: 25%;
+    }
+}
+
+.carousel-item .clients-card h5{
+    color: #343434;
+
+}
+/* end clients */
+/* start counter */
+.counter{
+    padding: 100px 0;
+    
+}
+.counter-card{
+    color: #343434;
+}
+.counter-card h3{
+    font-weight: 900;
+    padding: 10px 0;
+}
+.counter-card p{
+    color: gray;
+}
+/* end counter */
+/* start team */
+.team{
+    padding: 80px 0;
+    background-color: #F7F7F7;
+
+}
+.team-card .card-foot{
+    background-color: #312727;
+    padding: 10px 0;
+    position: relative;
+    z-index: 99999;
+}
+.team-card .card-head{
+    overflow: hidden;
+    position: relative;
+}
+.team-card .card-head .team-layer{
+    position: absolute;
+    transform: scale(.5)  rotateY(360deg);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all .5s ease;
+    z-index: 333;
+    top: 6px;
+    left: 6px;
+    bottom: 6px;
+    right: 6px;
+    opacity: 0;
+}
+.team-card:hover .team-layer{
+    transform: scale(1) rotateY(0);
+    cursor: pointer;
+    opacity: 1;
+}
+.team-card .card-head .team-layer i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 50%;
+    background-color: #1C1C1C;
+    transition: all 0s;
+}
+.team-card .card-head .team-layer i:hover{
+    background-color: white;
+    color: #1C1C1C;
+}
+.team-card .card-head img{
+    transition: all 1s;
+}
+.card-head:hover img{
+    transform: scale(1.2);
+}
+
+
+/* end team */
+/* start contact */
+.contact{
+    padding: 100px 0;
+}
+
+.contact-card i{
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    padding: 19px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    transition: all .7s;
+}
+.contact-card h4{
+    color: #1C1C1C;
+    padding: 10px 0;
+
+}
+.contact-card p{
+    color: rgb(0, 0, 0);
+}
+
+.contact-card:hover i{
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.form-style{
+    background-color: #F4F4F4 !important;
+    border: none !important;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none !important;
+    margin: 0 !important;
+}
+/* end contact */
+/* start footer */
+.footer{
+    background-color: #1C1C1C;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    color: #748182;
+}
+.contact-form button{
+    color: white;
+    padding: 5px 30px;
+    background-color:#1C1C1C;
+}
+.contact-form button:hover{
+    background-color:transparent;
+    border: #1C1C1C solid 3px;
+    color: #1C1C1C;
+}
+/* end footer */
+
+/* mohamed kamal -Rabaa Branch  */
+
